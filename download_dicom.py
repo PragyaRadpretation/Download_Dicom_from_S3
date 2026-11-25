@@ -29,14 +29,14 @@ import requests
 # CONFIGURATION - Update these two values before running
 # =============================================================================
 ORTHANC_URL = "https://pacs-ayurveda.radpretation.ai/"          # Orthanc base URL (e.g., "http://192.168.1.10:8042")
-ROOT_FOLDER = r"C://Users//kumar//Desktop//Download_Dicom_from_S3"        # Root folder where <studyID>.zip files will be saved
+ROOT_FOLDER = r"dicom_to_nifti/ayurveda_ct_mapped_dicom"        # Root folder where <studyID>.zip files will be saved
 
 # Optional Orthanc Basic Auth (leave empty if authentication is not enabled)
 ORTHANC_USERNAME = ""
 ORTHANC_PASSWORD = ""
 
 # Excel file settings (defaults to DX_studies.xlsx in the same directory as this script)
-EXCEL_FILE = Path(__file__).resolve().parent / "DX_studies.xlsx"
+EXCEL_FILE = Path(__file__).resolve().parent / "CT_studies_dicom_download.xlsx"
 SHEET_NAME = None  # None uses the active sheet (e.g., 'in')
 
 # Network / download settings
